@@ -17,7 +17,7 @@ public class VaccinationInfoAdapter extends RecyclerView.Adapter<VaccinationInfo
     private List<VaccineModal> list_vaccine;
 
     public VaccinationInfoAdapter(Context context, List<VaccineModal> list_vaccine) {
-        this.layoutInflater = layoutInflater;
+        this.layoutInflater = layoutInflater.from(context);
         this.list_vaccine = list_vaccine;
     }
 
